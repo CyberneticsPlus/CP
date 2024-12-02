@@ -1,5 +1,3 @@
 name = "cybernetics-plus"
 pages_build_output_dir = "./dist" # Path to the build output directory
-
-[build]
 command = "npm run build" # Command to build your project
