@@ -1,6 +1,5 @@
 name = "cybernetics-plus"
 pages_build_output_dir = "./dist" # Path to the build output directory
-type = "javascript" # or "webpack", "rust", depending on your project
 
 [build]
 command = "npm run build" # Command to build your project
