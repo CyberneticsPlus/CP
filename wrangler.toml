@@ -1,32 +1,18 @@
 name = "cybernetics-plus"
-type = "webpack"
-account_id = ""
-workers_dev = true
 compatibility_date = "2024-02-02"
-
-[site]
-bucket = "./dist"
-entry-point = "workers-site"
 
 [build]
 command = "npm run build"
-upload.format = "service-worker"
+output_dir = "dist"
 
-[build.upload]
-format = "service-worker"
-
-[env.production]
-zone_id = ""
-route = ""
+[site]
+bucket = "./dist"
 
 # Enable SPA routing
-[routes]
-"/*" = "/index.html"
-
-# Configure caching
-[cache]
-browser_TTL = 14400 # 4 hours
-edge_TTL = 86400    # 24 hours
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
 
 # Configure headers
 [[headers]]
