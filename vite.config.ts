@@ -32,12 +32,5 @@ export default defineConfig({
       '@react-three/fiber',
       '@react-three/drei'
     ]
-  },
-  server: {
-    port: 5173,
-    host: true,
-    hmr: {
-      overlay: false
-    }
   }
 });
