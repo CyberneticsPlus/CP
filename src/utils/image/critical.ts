@@ -16,7 +16,7 @@ export const preloadCriticalImages = () => {
   if (typeof window === 'undefined') return;
 
   const preloadWithOptions = () => {
-    preloadImages(CRITICAL_IMAGES, {
+    preloadImages([...CRITICAL_IMAGES], {
       priority: 'high',
       formats: ['image/webp', 'image/avif'],
       timeout: 10000 // Increased timeout for larger images
